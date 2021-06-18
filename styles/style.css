@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --text-color: #1c2042;
+    --background-color: #861657;
+    --white-color: #fff;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: var(--text-color);
+}
+
+
+main {
+    min-height: 30rem;
+    min-width: 35rem;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    box-shadow: 20px 20px 60px rgba(91,13,22,0.1),
+    -20px -20px 60px rgba(123,17,29,0.15);
+    padding: 2.5rem;
+}
+header{
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    }
+header h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    /* margin-bottom: 1rem; */
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.hands {
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.hands button{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    font-size: 5rem;
+    background-color: var(--background-color);
+    color: var(--white-color);
+    border:0;
+    cursor: pointer;
+    transform: all 0.2s ease;
+
+}
+
+.hands button:hover {
+    transform: translateY(5px);
+    background-color:#ffa69e;
+    color: var(--white-color);
+}
+
+.hands button:hover:active {
+    transform: scale(1.1);
+}
+
+.result {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.result button {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--text-color);
+    color: var(--white-color);
+    width: 50%;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.result button:hover {
+    transform: translateY(5px);
+    background-color:#ffa69e;
+    color: var(--white-color);
+}
+
+.result button:hover:active {
+    transform: scale(1.1);
+}
+
+
+.result p{
+    margin-bottom: 0.5rem;
+}
+.result-message {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--text-color);
+    color: var(--white-color);
+    width: 50%;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
+
+
